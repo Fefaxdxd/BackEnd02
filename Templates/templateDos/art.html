@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA DJANGO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="container mt-5">
+    <div class="alert alert-info display-1 text-center">
+        <img src="{% static 'imagenes/logo.png' %}" width="100px" alt="">
+        Arte
+    </div>
+    <div class="row">
+        <div class="col"><a href="/visual" class="btn btn-outline-dark p-3 btn-info w-100"><b>Arte Visual</b></a>
+            <div>
+                <img src="{% static banv %}"width="375px"alt=""/>
+                <ul style="list-style-type:none;">
+                    <br>
+                    <li><b>{{dato1V}}</b></li>
+                    <br>
+                    <li><b>{{dato2V}}</b></li>
+                    <br>
+                    <li><b>{{dato3V}}</b></li>
+                    <br>
+                    <li><b>{{dato4V}}</b></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col"><a href="/escenico" class="btn btn-outline-dark p-3 btn-info w-100"><b>Arte Escénico</b></a>
+            <div>
+                <img src="{% static bane %}"width="375px"alt=""/>
+                <ul style="list-style-type:none;">
+                    <br>
+                    <li><b>{{dato1E}}</b></li>
+                    <br>
+                    <li><b>{{dato2E}}</b></li>
+                    <br>
+                    <li><b>{{dato3E}}</b></li>
+                    <br>
+                    <li><b>{{dato4E}}</b></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col"><a href="/literario" class="btn btn-outline-dark p-3 btn-info w-100"><b>Arte Literario</b></a>
+            <div>
+                <img src="{% static banlff %}"width="375px"alt=""/>
+                <ul style="list-style-type:none;">
+                    <br>
+                    <li><b>{{dato1L}}</b></li>
+                    <br>
+                    <li><b>{{dato2L}}</b></li>
+                    <br>
+                    <li><b>{{dato3L}}</b></li>
+                    <br>
+                    <li><b>{{dato4L}}</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a href="/" class="btn btn-info mt-5">Django Shop</a>
+</body>
+
+</html>
